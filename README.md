@@ -9,7 +9,7 @@ The primary objective of this project is to serve as a **Proof-of-Concept (PoC)*
 
 -------
 
-Beelow is the complete list of infrastructure servers for Hospital Ampang, fully approved by the Ministry of Health (MOH) for implementation.
+Below is the complete list of infrastructure servers for Hospital Ampang, fully approved by the Ministry of Health (MOH) for implementation.
 
 Infra (IF) Server's
 1	AMP-IFDC01	10.39.101.1  - Primary Domain Controller
