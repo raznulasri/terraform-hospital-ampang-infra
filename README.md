@@ -1,3 +1,11 @@
+vpc - done
+
+ec2 - in progress -
+windows for dc,
+linux for Monitoring (grafana & Prometheus),
+linux to run container using docker,
+intance for fortigate (firewall)
+
 # AWS Infrastructure Replication – Hospital Ampang 
 
 ## Summary
@@ -6,6 +14,7 @@ This repository contains the **Infrastructure as Code (IaC)** implementation usi
 
 The primary objective of this project is to serve as a **Proof-of-Concept (PoC)** and foundational model, demonstrating the automated deployment, network segmentation, and resource provisioning based on the approved **Ministry of Health (MOH) / Kementerian Kesihatan Malaysia (KKM)** final System Design Document (SDD).
 
+## Diagram
 
 -------
 # Infrastructure Servers - Hospital Ampang
