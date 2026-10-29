@@ -16,7 +16,7 @@ resource "aws_subnet" "public_subnet" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "Public-Subnet"
+    Name = "public-subnet"
   }
 }
 
@@ -27,7 +27,7 @@ resource "aws_subnet" "infra_subnet" {
   availability_zone       = var.az
 
   tags = {
-    Name = "Private-Infra"
+    Name = "private-infra"
   }
 }
 
@@ -38,7 +38,7 @@ resource "aws_subnet" "storage_subnet" {
   availability_zone       = var.az
 
   tags = {
-    Name = "Private-Storage"
+    Name = "private-storage"
   }
 }
 
@@ -49,7 +49,7 @@ resource "aws_subnet" "db_subnet" {
   availability_zone       = var.az
 
   tags = {
-    Name = "Private-DB"
+    Name = "private-db"
   }
 }
 
@@ -60,7 +60,7 @@ resource "aws_subnet" "dept1_subnet" {
   availability_zone       = var.az
 
   tags = {
-    Name = "Private-Dept1"
+    Name = "private-dept1"
   }
 }
 
@@ -71,7 +71,7 @@ resource "aws_subnet" "dept2_subnet" {
   availability_zone       = var.az
 
   tags = {
-    Name = "Private-Dept2"
+    Name = "private-dept2"
   }
 }
 
@@ -91,7 +91,7 @@ resource "aws_route_table" "public_rt" {
   vpc_id = aws_vpc.main_vpc.id
 
   tags = {
-    Name = "Public-Route-Table"
+    Name = "public-route-table"
   }
 }
 
@@ -107,7 +107,7 @@ resource "aws_route_table" "private_rt" {
   # }
 
   tags = {
-    Name = "Private-Route-Table-Via-FortiGate"
+    Name = "private-route-table"
   }
 }
 
