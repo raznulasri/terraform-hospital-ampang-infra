@@ -8,7 +8,7 @@ resource "aws_vpc" "main_vpc" {
 
 # 3. SUBNETS BASED ON IP PLAN
 
-# Public Subnet (FortiGate WAN)
+# Public Subnet (WAN)
 resource "aws_subnet" "public_subnet" {
   vpc_id                  = aws_vpc.main_vpc.id
   cidr_block              = "10.39.10.0/24"

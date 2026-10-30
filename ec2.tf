@@ -15,17 +15,17 @@ data "aws_iam_instance_profile" "my_ssm_profile" {
 }
 
 # < bersambung
-# resource "aws_instance" "my_server_1" {
-#   ami                    = data.aws_ami.my_ami.id
-#   instance_type          = "t3.micro"
-#   subnet_id              = aws_subnet.my_subnet.id
-#   vpc_security_group_ids = [aws_security_group.my_sg.id]
-#   iam_instance_profile   = data.aws_iam_instance_profile.my_ssm_profile.name
+resource "aws_instance" "my_server_firewall" {
+  ami                    = data.aws_ami.my_ami.id
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.public_subnet.id
+  vpc_security_group_ids = [aws_security_group.my_sg.id]
+  iam_instance_profile   = data.aws_iam_instance_profile.my_ssm_profile.name
 
-#   tags = {
-#     Name = "tf-server-1"
-#   }
-# }
+  tags = {
+    Name = "firewall via ubuntu"
+  }
+}
 
 resource "aws_instance" "my_server_monitoring" {
   ami                    = data.aws_ami.my_ami.id
