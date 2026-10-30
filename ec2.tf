@@ -68,7 +68,9 @@ resource "aws_instance" "my_server_dc1" {
   vpc_security_group_ids = [aws_security_group.my_sg.id]
   iam_instance_profile   = data.aws_iam_instance_profile.my_ssm_profile.name
 
-  # Set your fixed private IP here (cant use 101.1 . need find out)
+  # Set your fixed private IP here cant use 101.1
+  # AWS strictly prohibits assigning 10.39.101.1 to any EC2 instance. 
+  # At the AWS hypervisor level, Amazon automatically hardcodes and owns .1
   private_ip             = "10.39.101.10"
 
   tags = {
