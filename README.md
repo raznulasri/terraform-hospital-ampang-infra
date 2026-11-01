@@ -77,5 +77,5 @@ Before getting started, make sure you have the following installed on your local
 Clone the repository and initialize Terraform:
 
 ```bash
-git clone git@github.com:raznulasri/terraform-basic.git ~/terraform-basic && cd ~/terraform-basic && terraform init
+git clone git@github.com:raznulasri/terraform-hospital-ampang-infra.git ~/terraform-hospital-ampang-infra && cd ~/terraform-basic && terraform init
 
