@@ -62,3 +62,20 @@ Below is the complete list of infrastructure servers for Hospital Ampang, fully 
 
 ## Storage HP SAN Storage
 - **35.** AMP-IFST01 | 10.39.102.1
+
+# 📌 Prerequisites
+
+Before getting started, make sure you have the following installed on your local machine:
+
+* **Terraform**: [Official Terraform Installation Guide](https://developer.hashicorp.com/terraform/install)
+
+---
+
+
+# 🚀 Quick Start
+
+Clone the repository and initialize Terraform:
+
+```bash
+git clone git@github.com:raznulasri/terraform-basic.git ~/terraform-basic && cd ~/terraform-basic && terraform init
+
